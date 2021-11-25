@@ -2,83 +2,85 @@ import React, { useState } from 'react';
 import './App.css';
 
 function Home() {
-  return <div>POGGGGGGGG</div>;
+  return <>Home filler</>;
 }
 
 function MoveTabs() {
-  return <div>fdsafdsagsd</div>;
+  return <>MoveTabs filler</>;
 }
 
-function Page() {
+function Windows() {
+  return <>Windows Filler</>;
+}
+
+function TabGroups() {
+  return <>TabGroups filler</>;
+}
+
+function Exclusions() {
+  return <>Exclusions Filler</>;
+}
+
+function Logs() {
+  return <>Logs Filler</>;
+}
+
+function Page({ curPage }) {
+  return <>{curPage}</>;
+}
+
+function PageContainer() {
+  const navTitles = [
+    'Home',
+    'MoveTabs',
+    'Windows',
+    'TabGroups',
+    'Exclusions',
+    'Logs',
+  ];
+  const pages = [
+    <Home />,
+    <MoveTabs />,
+    <Windows />,
+    <TabGroups />,
+    <Exclusions />,
+    <Logs />,
+  ];
+  const [curActivePage, setActivePage] = useState(pages[0]);
   return (
     <div>
       <header className='App-header'>
         <h1>DuplicateTabCloser</h1>
       </header>
-      <Navbar />
+      <Navbar titles={navTitles} setActivePage={setActivePage} pages={pages} />
+      <Page curPage={curActivePage} />
     </div>
   );
 }
 
-function Section({ isActive }) {
-  if (isActive === 0) {
-    return (
-      <div>
-        <Home />
-      </div>
-    );
-  } else if (isActive === 1) {
-    return <div><MoveTabs /></div>;
-  } else {
-    return <div></div>
-  }
-}
-
-function Navbar() {
-  const [isActive, setActive] = useState(0);
+function Navbar({ titles, setActivePage, pages }) {
   return (
-    <div>
+    <>
       <ul className='nav'>
-        <li>
-          <button className="link-button" onClick={() => setActive(0)}>
-            Home
-          </button>
-        </li>
-        <li>
-          <button className="link-button" onClick={() => setActive(1)}>
-            MoveTabs
-          </button>
-        </li>
-        <li>
-          <button className="link-button" onClick={() => setActive(2)}>
-            Windows
-          </button>
-        </li>
-        <li>
-          <button className="link-button" onClick={() => setActive(3)}>
-            TabGroups
-          </button>
-        </li>
-        <li>
-          <button className="link-button" onClick={() => setActive(4)}>
-            Exclusions
-          </button>
-        </li>
-        <li>
-          <button className="link-button" onClick={() => setActive(5)}>
-            Logs
-          </button>
-        </li>
+        {titles.map((title, index) => (
+          <li key={title}>
+            <button
+              className='link-button'
+              onClick={() => setActivePage(pages[index])}
+            >
+              {title}
+            </button>
+          </li>
+        ))}
       </ul>
-      <Section isActive={isActive} />
-    </div>
+    </>
   );
 }
 
 function App() {
   return (
     <div className='App'>
-      <Page />
+      <PageContainer />
     </div>
   );
 }
