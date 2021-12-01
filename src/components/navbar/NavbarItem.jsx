@@ -1,10 +1,10 @@
-function NavbarItem({ title, index, curPage, setActivePage }) {
+function NavbarItem({ page, index, curPage, setActivePage }) {
   return (
     <button
-      className={`link-button ${curPage === index ? 'selected' : ''}`}
+      className={`block text-white text-center py-4 px-4 text-lg hover:bg-navGray-hover ${curPage === index ? 'bg-navGray-selected' : ''}`}
       onClick={() => setActivePage(index)}
     >
-      {title.name}
+      {page.name}
     </button>
   );
 }

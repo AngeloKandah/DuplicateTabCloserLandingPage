@@ -22,11 +22,11 @@ function App() {
   const [curActivePage, setActivePage] = useState(0);
   return (
     <div>
-      <header className='App-header'>
+      <header className='flex justify-center text-7xl text-white py-6 bg-navGray'>
         <h1>DuplicateTabCloser</h1>
       </header>
       <Navbar
-        titles={pages}
+        pages={pages}
         curPage={curActivePage}
         setActivePage={setActivePage}
       />

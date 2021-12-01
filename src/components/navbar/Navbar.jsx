@@ -1,12 +1,12 @@
 import NavbarItem from './NavbarItem.jsx';
 
-function Navbar({ titles, curPage, setActivePage }) {
+function Navbar({ pages, curPage, setActivePage }) {
   return (
-    <ul className='nav'>
-      {titles.map((title, index) => (
+    <ul className='bg-navGray flex justify-center sticky z-100 top-0'>
+      {pages.map((page, index) => (
         <li key={index}>
           <NavbarItem
-            title={title}
+            page={page}
             index={index}
             curPage={curPage}
             setActivePage={setActivePage}

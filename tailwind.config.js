@@ -2,15 +2,27 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: {
-      tan: {
-        DEFAULT: '#E6C8A1',
+    extend: {
+      colors: {
+        tan: {
+          DEFAULT: '#E6C8A1',
+        },
+        navGray: {
+          selected: '#1c1b1b',
+          DEFAULT: '#333333',
+          hover: '#2b2b2b',
+        },
+        header: {
+          DEFAULT: '#282c34'
+        },
       },
+      zIndex: {
+        '100': 100,
+      }
     },
-    extend: {},
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
