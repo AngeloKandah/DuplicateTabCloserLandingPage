@@ -8,7 +8,7 @@ import {
   Exclusions,
   Logs,
 } from './components/pages';
-import { Navbar } from './components/navbar';
+import { Header } from './components/header';
 
 function Page({ CurPage }) {
   useEffect(() => {
@@ -20,17 +20,15 @@ function Page({ CurPage }) {
 function App() {
   const pages = [Home, MoveTabs, Windows, TabGroups, Exclusions, Logs];
   const [curActivePage, setActivePage] = useState(0);
+  const navbarContents = {
+    pages,
+    curPage: { curActivePage },
+    setActivePage,
+  };
   return (
     <div>
-      <header className='flex justify-center text-7xl text-white py-6 bg-navGray'>
-        <h1>DuplicateTabCloser</h1>
-      </header>
-      <Navbar
-        pages={pages}
-        curPage={curActivePage}
-        setActivePage={setActivePage}
-      />
-      <div className='px-64 py-5'>
+      <Header title='DuplicateTabCloser' navbarContents={navbarContents} />
+      <div id='pageContainer' className='px-64 py-5'>
         <Page CurPage={pages[curActivePage]} />
       </div>
     </div>
