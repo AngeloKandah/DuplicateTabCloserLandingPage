@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import {
   Home,
@@ -10,26 +11,27 @@ import {
 } from './components/pages';
 import { Header } from './components/header';
 
-function Page({ CurPage }) {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
-  return <CurPage />;
-}
-
 function App() {
-  const pages = [Home, MoveTabs, Windows, TabGroups, Exclusions, Logs];
-  const [curActivePage, setActivePage] = useState(0);
-  const navbarContents = {
-    pages,
-    curPage: { curActivePage },
-    setActivePage,
-  };
+  const routes = [
+    { title: 'Home', Component: Home },
+    { title: 'MoveTabs', Component: MoveTabs },
+    { title: 'Windows', Component: Windows },
+    { title: 'TabGroups', Component: TabGroups },
+    { title: 'Exclusions', Component: Exclusions },
+    { title: 'Logs', Component: Logs },
+  ];
+
+  function assignRoutes(routes) {
+    return routes.map(({ title, Component }, index) => (
+      <Route path={title} element={<Component />} key={index} />
+    ));
+  }
+
   return (
     <div>
-      <Header title='DuplicateTabCloser' navbarContents={navbarContents} />
+      <Header headerTitle='DuplicateTabCloser' navbarRoutes={routes} />
       <div id='pageContainer' className='px-64 py-5'>
-        <Page CurPage={pages[curActivePage]} />
+        <Routes>{assignRoutes(routes)}</Routes>
       </div>
     </div>
   );

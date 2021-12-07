@@ -13,11 +13,11 @@ module.exports = {
           hover: '#2b2b2b',
         },
         header: {
-          DEFAULT: '#282c34'
+          DEFAULT: '#282c34',
         },
       },
       zIndex: {
-        '100': 100,
+        100: 100,
       },
     },
   },
