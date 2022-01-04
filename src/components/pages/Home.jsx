@@ -2,7 +2,8 @@ import image from '../../images/500x250.png';
 
 function Home() {
   return (
-    <div id='homePage'>
+    <div id='Home'>
+      <h1 className='text-3xl font-semibold'>Home</h1>
       <div className='grid grid-cols-2 pb-10'>
         <p className='pr-10'>
           The Duplicate Tab Closer does exactly what it says it does, closes
@@ -13,10 +14,18 @@ function Home() {
           urls to see if they match, so it will not close any tabs from the same
           source if they are not exactly the same.
         </p>
-        <img className='mx-auto' src={image} alt='Duplicate Tab Closer In Action' />
+        <img
+          className='mx-auto'
+          src={image}
+          alt='Duplicate Tab Closer In Action'
+        />
       </div>
       <div className='grid grid-cols-2 pb-10'>
-        <img className='mx-auto' src={image} alt='Duplicate Tab Closer In Action' />
+        <img
+          className='mx-auto'
+          src={image}
+          alt='Duplicate Tab Closer In Action'
+        />
         <p className='pl-10'>
           The main purpose of this extension is to make your tabs less
           cluttered, too many tabs makes it impractical to navigate and will

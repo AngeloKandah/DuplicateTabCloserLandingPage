@@ -1,5 +1,3 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import {
   Home,
@@ -13,25 +11,23 @@ import { Header } from './components/header';
 
 function App() {
   const routes = [
-    { title: 'Home', Component: Home },
-    { title: 'MoveTabs', Component: MoveTabs },
-    { title: 'Windows', Component: Windows },
-    { title: 'TabGroups', Component: TabGroups },
-    { title: 'Exclusions', Component: Exclusions },
-    { title: 'Logs', Component: Logs },
+    { title: 'Home', page: Home },
+    { title: 'MoveTabs', page: MoveTabs },
+    { title: 'Windows', page: Windows },
+    { title: 'TabGroups', page: TabGroups },
+    { title: 'Exclusions', page: Exclusions },
+    { title: 'Logs', page: Logs },
   ];
-
-  function assignRoutes(routes) {
-    return routes.map(({ title, Component }, index) => (
-      <Route path={title} element={<Component />} key={index} />
-    ));
-  }
-
   return (
     <div>
-      <Header headerTitle='DuplicateTabCloser' navbarRoutes={routes} />
-      <div id='pageContainer' className='px-64 py-5'>
-        <Routes>{assignRoutes(routes)}</Routes>
+      <Header title='DuplicateTabCloser' navbarRoutes={routes} />
+      <div id='pageContainer' className='px-64'>
+        <Home/>
+        <MoveTabs/>
+        <Windows/>
+        <TabGroups/>
+        <Exclusions/>
+        <Logs/>
       </div>
     </div>
   );
