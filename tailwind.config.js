@@ -16,6 +16,9 @@ module.exports = {
           DEFAULT: '#282c34',
         },
       },
+      margin: {
+        'container': '25vw',
+      },
       zIndex: {
         100: 100,
       },

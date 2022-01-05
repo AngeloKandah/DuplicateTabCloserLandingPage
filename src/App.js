@@ -21,13 +21,10 @@ function App() {
   return (
     <div>
       <Header title='DuplicateTabCloser' navbarRoutes={routes} />
-      <div id='pageContainer' className='px-64'>
-        <Home/>
-        <MoveTabs/>
-        <Windows/>
-        <TabGroups/>
-        <Exclusions/>
-        <Logs/>
+      <div id='pageContainer' className='mx-container'>
+        {routes.map(({ page: Page }) => {
+          return <Page />;
+        })}
       </div>
     </div>
   );

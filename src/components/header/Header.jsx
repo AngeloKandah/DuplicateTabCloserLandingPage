@@ -2,11 +2,11 @@ import { Navbar } from '../navbar';
 
 function Header({ title, navbarRoutes }) {
   return (
-    <header id='header' className='bg-navGray flex justify-left items-end sticky z-100 top-0 w-full'>
-      <h1
-        className={`justify-left text-5xl text-white py-6 px-6 bg-navGray 
-          ${navbarRoutes ? '' : 'w-full'}`}
-      >
+    <header
+      id='header'
+      className='bg-navGray flex justify-left sticky z-100 top-0'
+    >
+      <h1 className='bg-navGray xl:text-5xl md:text-3xl sm:text-2xl text-xl justify-left text-white py-6 px-6 self-end'>
         {title}
       </h1>
       {navbarRoutes ? <Navbar routes={navbarRoutes} /> : ''}
