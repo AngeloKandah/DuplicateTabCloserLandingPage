@@ -9,25 +9,25 @@ function Navbar({ routes }) {
         id='desktop-navbar'
         className='hidden lg:bg-navGray lg:flex lg:items-end'
       >
-        {routes.map(({ title }, index) => (
+        {routes.map(({ title }) => (
           <li key={uuidv4()}>
             <NavbarItem title={title} />
           </li>
         ))}
       </ul>
       <button
-        className='lg:hidden text-white px-5'
+        className='bg-navGray lg:hidden text-white w-28 hover:bg-navGray-hover'
         onClick={() =>
           document.getElementById('mobile-navbar').classList.toggle('hidden')
         }
       >
-        Options
+        Options {' '}
       </button>
       <ul
         id='mobile-navbar'
-        className='hidden absolute mt-10 bg-navGray flex flex-col'
+        className='hidden bg-navGray absolute md:mt-19 sm:mt-18 mt-17 lg:hidden'
       >
-        {routes.map(({ title }, index) => (
+        {routes.map(({ title }) => (
           <li key={uuidv4()}>
             <NavbarItem title={title} />
           </li>

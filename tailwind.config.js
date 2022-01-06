@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -17,7 +17,10 @@ module.exports = {
         },
       },
       margin: {
-        'container': '25vw',
+        container: '25vw',
+        17: '4.25rem',
+        18: '4.5rem',
+        19: '4.75rem',
       },
       zIndex: {
         100: 100,
