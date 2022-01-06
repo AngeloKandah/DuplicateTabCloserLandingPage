@@ -1,4 +1,5 @@
 import './App.css';
+import { v4 as uuidv4 } from 'uuid';
 import {
   Home,
   MoveTabs,
@@ -23,7 +24,7 @@ function App() {
       <Header title='DuplicateTabCloser' navbarRoutes={routes} />
       <div id='pageContainer' className='mx-container'>
         {routes.map(({ page: Page }) => {
-          return <Page />;
+          return <Page key={uuidv4()} />;
         })}
       </div>
     </div>
