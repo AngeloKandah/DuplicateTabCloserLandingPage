@@ -17,10 +17,12 @@ module.exports = {
         },
       },
       margin: {
-        container: '25vw',
         17: '4.25rem',
         18: '4.5rem',
         19: '4.75rem',
+      },
+      padding: {
+        container: '25vw',
       },
       zIndex: {
         100: 100,

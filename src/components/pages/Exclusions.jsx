@@ -2,42 +2,25 @@ import image from '../../images/500x250.png';
 
 function Exclusions() {
   return (
-    <div id='Exclusions' className='pb-5'>
-      <h1 className='text-3xl font-semibold py-3'>Exclusions</h1>
-      <p>
-        The Duplicate Tab Closer does exactly what it says it does, closes
-        duplicate tabs! With the duplicate tab closer it will prevent you from
-        having duplicate tabs from existing at the same time, and will delete
-        the newest tab opened to prevent any input loss in a previously opened
-        tab. The way the Duplicate Tab Closer works is simply by comparing urls
-        to see if they match, so it will not close any tabs from the same source
-        if they are not exactly the same.
+    <div id='Exclusions' className='pb-4'>
+      <h1 className='text-3xl font-semibold pt-3'>Exclusions</h1>
+      <p className='py-3'>
+        Exclusions for the Duplicate Tab Closer will ignore any urls that
+        contain whatever one has inputted for an exclusion. The Exclusions also
+        support regex, so if you would prefer the Duplicate Tab Closer to ignore
+        all urls with a specific string, or based on a specific regex pattern,
+        it will respect the user's input.
       </p>
-      <img
-        className='mx-auto'
-        src={image}
-        alt='Duplicate Tab Closer In Action'
-      />
-      <p>
-        The main purpose of this extension is to make your tabs less cluttered,
-        too many tabs makes it impractical to navigate and will inevitably lead
-        you to having duplicate tabs from an already previous search. Having
-        this extension will clean out clutter, while also being adjustable to
-        what you want with the varying options that exist.
-      </p>
-      <img
-        className='mx-auto'
-        src={image}
-        alt='Duplicate Tab Closer In Action'
-      />
-      <p className='text-4xl text-center pb-4'>Options</p>
-      <p className='pb-2'>
-        There are many options for the Duplicate Tab Closer that allow it to be
-        more user driven. The tabs are as follows:{' '}
-        <b>MoveTabs, Effect Windows, Effect TabGroups, and Exclusions.</b> The
-        logs are to quickly know which tab was recently deleted to go back to it
-        if wanted. More detail about each of these options will be done in their
-        respective page located on the navbar.
+      <figure className='py-3'>
+        <img className='mx-auto' src={image} alt='Demonstrating exclusions.' />
+        <figcaption className='text-center text-sm'>
+          With and without Exclusions.
+        </figcaption>
+      </figure>
+      <p className='py-3'>
+        These exclusions work across all other options, including the Detect
+        Windows and Detect TabGroups options, it will have the highest priority
+        and will not close any tabs with the inputted exclusions.
       </p>
     </div>
   );

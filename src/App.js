@@ -22,7 +22,13 @@ function App() {
   return (
     <div>
       <Header title='DuplicateTabCloser' navbarRoutes={routes} />
-      <div id='pageContainer' className='mx-container'>
+      <div
+        id='pageContainer'
+        className='px-container'
+        onClick={() =>
+          document.getElementById('mobile-navbar').classList.add('hidden')
+        }
+      >
         {routes.map(({ page: Page }) => {
           return <Page key={uuidv4()} />;
         })}
