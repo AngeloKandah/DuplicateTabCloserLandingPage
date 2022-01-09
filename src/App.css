@@ -6,6 +6,15 @@ html {
 :target:before {
   content: '';
   display: block;
-  height: 100px;
-  margin: -100px 0 0;
+  height: 6em;
+  margin: -6em 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  :target:before {
+    content: '';
+    display: block;
+    height: 5em;
+    margin: -5em 0 0;
+  }
 }

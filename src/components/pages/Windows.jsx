@@ -7,7 +7,7 @@ function Windows() {
       <p className='py-3'>
         The detect duplicates between windows options does exactly that, will
         make sure you do not have duplicate tabs open across multiple windows.
-        If this is not toggled on, one can have duplicate tabs on new windows,
+        If this is not toggled on, you can have duplicate tabs on new windows,
         however, if a duplicate tab is opened within the window, the extension
         will still function as intended.
       </p>

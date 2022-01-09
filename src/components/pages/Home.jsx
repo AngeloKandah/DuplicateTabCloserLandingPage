@@ -36,10 +36,9 @@ function Home() {
       <p className='py-3'>
         There are many options for the Duplicate Tab Closer that allow it to be
         more user driven. The options are as follows:{' '}
-        <b>MoveTabs, Effect Windows, Effect TabGroups, and Exclusions.</b> The
-        logs are to quickly know which tab was recently deleted to go back to it
-        if wanted. More detail about each of these options will be done in their
-        respective page located on the navbar.
+        <b>MoveTabs, Effect Windows, Effect TabGroups, Exclusions, and Logs.</b>{' '}
+        More detail about each of these options will be discussed below or by
+        using the navbar.
       </p>
     </div>
   );

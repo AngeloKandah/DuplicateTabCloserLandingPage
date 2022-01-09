@@ -9,6 +9,7 @@ import {
   Logs,
 } from './components/pages';
 import { Header } from './components/header';
+import { Footer } from './components/footer';
 
 function App() {
   const routes = [
@@ -33,6 +34,7 @@ function App() {
           return <Page key={uuidv4()} />;
         })}
       </div>
+      <Footer />
     </div>
   );
 }
