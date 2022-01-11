@@ -20,10 +20,10 @@ function App() {
     { title: 'Logs', page: Logs },
   ];
   return (
-    <div>
+    <div id='mainPage'>
       <Header navbarRoutes={routes} />
       <div
-        id='pageContainer'
+        id='contentContainer'
         className='px-container'
         onClick={() =>
           document.getElementById('mobile-navbar').classList.add('hidden')

@@ -3,7 +3,12 @@ import DTC from '../../images/DTC_In_Action.webp';
 function Home() {
   return (
     <div id='Home' className='pb-4'>
-      <h1 className='text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-semibold text-center py-3 font-mono'>Duplicate Tab Closer</h1>
+      <h1
+        id='title'
+        className='text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-semibold text-center py-5 mx-title font-mono'
+      >
+        Duplicate Tab Closer
+      </h1>
       <figure className='py-3'>
         <img
           className='mx-auto'

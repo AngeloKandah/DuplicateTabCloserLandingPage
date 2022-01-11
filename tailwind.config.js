@@ -17,9 +17,7 @@ module.exports = {
         },
       },
       margin: {
-        17: '4.25rem',
-        18: '4.5rem',
-        19: '4.75rem',
+        title: '-25vw',
       },
       padding: {
         container: '25vw',
