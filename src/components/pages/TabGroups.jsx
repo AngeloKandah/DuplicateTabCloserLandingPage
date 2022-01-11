@@ -1,4 +1,5 @@
-import image from '../../images/500x250.png';
+import tabOn from '../../images/TabGroups_On.webp';
+import tabOff from '../../images/TabGroups_Off.webp';
 
 function TabGroups() {
   return (
@@ -15,7 +16,7 @@ function TabGroups() {
       <figure className='py-3'>
         <img
           className='mx-auto'
-          src={image}
+          src={tabOn}
           alt='Portraying when Detect Duplicates Between TabGroups is On'
         />
         <figcaption className='text-center text-sm'>
@@ -25,7 +26,7 @@ function TabGroups() {
       <figure className='py-3'>
         <img
           className='mx-auto'
-          src={image}
+          src={tabOff}
           alt='Portraying Detect Duplicates Between TabGroups is Off'
         />
         <figcaption className='text-center text-sm'>

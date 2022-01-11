@@ -1,4 +1,5 @@
-import image from '../../images/500x250.png';
+import winOn from '../../images/Windows_On.webp';
+import winOff from '../../images/Windows_Off.webp'
 
 function Windows() {
   return (
@@ -14,7 +15,7 @@ function Windows() {
       <figure className='py-3'>
         <img
           className='mx-auto'
-          src={image}
+          src={winOn}
           alt='Portraying when Detect Duplicates Between Windows is On'
         />
         <figcaption className='text-center text-sm'>
@@ -24,7 +25,7 @@ function Windows() {
       <figure className='py-3'>
         <img
           className='mx-auto'
-          src={image}
+          src={winOff}
           alt='Portraying when Detect Duplicates Between Windows is Off'
         />
         <figcaption className='text-center text-sm'>

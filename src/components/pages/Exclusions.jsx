@@ -1,4 +1,4 @@
-import image from '../../images/500x250.png';
+import exclusionEx from '../../images/Exclusions.webp';
 
 function Exclusions() {
   return (
@@ -12,7 +12,7 @@ function Exclusions() {
         it will respect your input.
       </p>
       <figure className='py-3'>
-        <img className='mx-auto' src={image} alt='Demonstrating exclusions.' />
+        <img className='mx-auto' src={exclusionEx} alt='Demonstrating exclusions.' />
         <figcaption className='text-center text-sm'>
           With an Exclusions.
         </figcaption>

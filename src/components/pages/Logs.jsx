@@ -1,5 +1,3 @@
-import image from '../../images/500x250.png';
-
 function Logs() {
   return (
     <div id='Logs' className='pb-4'>

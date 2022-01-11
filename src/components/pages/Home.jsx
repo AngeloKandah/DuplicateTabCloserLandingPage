@@ -1,4 +1,4 @@
-import image from '../../images/500x250.png';
+import DTC from '../../images/DTC_In_Action.webp';
 
 function Home() {
   return (
@@ -17,7 +17,7 @@ function Home() {
       <figure className='py-3'>
         <img
           className='mx-auto'
-          src={image}
+          src={DTC}
           alt='Duplicate Tab Closer In Action'
         />
         <figcaption className='text-center text-sm'>
