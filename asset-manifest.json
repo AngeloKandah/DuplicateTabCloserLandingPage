@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/DuplicateTabCloserLandingPage/static/css/main.0176819d.css",
-    "main.js": "/DuplicateTabCloserLandingPage/static/js/main.8b338d17.js",
+    "main.css": "/DuplicateTabCloserLandingPage/static/css/main.d5def1d2.css",
+    "main.js": "/DuplicateTabCloserLandingPage/static/js/main.ebcdd6ea.js",
     "static/js/787.fec03637.chunk.js": "/DuplicateTabCloserLandingPage/static/js/787.fec03637.chunk.js",
-    "static/media/Windows_On.webp": "/DuplicateTabCloserLandingPage/static/media/Windows_On.b650e56b4ee598e246f0.webp",
-    "static/media/Exclusions.webp": "/DuplicateTabCloserLandingPage/static/media/Exclusions.683798e9190864c6625e.webp",
-    "static/media/Windows_Off.webp": "/DuplicateTabCloserLandingPage/static/media/Windows_Off.f01eb9485da860e092a4.webp",
-    "static/media/TabGroups_Off.webp": "/DuplicateTabCloserLandingPage/static/media/TabGroups_Off.07b6153e71320cb835dd.webp",
-    "static/media/TabGroups_On.webp": "/DuplicateTabCloserLandingPage/static/media/TabGroups_On.e7ee7d628c7dcac8b97b.webp",
-    "static/media/MoveTabs.webp": "/DuplicateTabCloserLandingPage/static/media/MoveTabs.baad747a8241801ac30e.webp",
     "static/media/DTC_In_Action.webp": "/DuplicateTabCloserLandingPage/static/media/DTC_In_Action.62482852defd896981fd.webp",
+    "static/media/Exclusions.webp": "/DuplicateTabCloserLandingPage/static/media/Exclusions.bbdf35f60a8bf802c97f.webp",
+    "static/media/TabGroups_On.webp": "/DuplicateTabCloserLandingPage/static/media/TabGroups_On.71794df6d0178ca59248.webp",
+    "static/media/MoveTabs.webp": "/DuplicateTabCloserLandingPage/static/media/MoveTabs.8353b335cf0cf404aea0.webp",
+    "static/media/Windows_On.webp": "/DuplicateTabCloserLandingPage/static/media/Windows_On.52b9dd6271203929f7a1.webp",
     "index.html": "/DuplicateTabCloserLandingPage/index.html",
-    "main.0176819d.css.map": "/DuplicateTabCloserLandingPage/static/css/main.0176819d.css.map",
-    "main.8b338d17.js.map": "/DuplicateTabCloserLandingPage/static/js/main.8b338d17.js.map",
+    "main.d5def1d2.css.map": "/DuplicateTabCloserLandingPage/static/css/main.d5def1d2.css.map",
+    "main.ebcdd6ea.js.map": "/DuplicateTabCloserLandingPage/static/js/main.ebcdd6ea.js.map",
     "787.fec03637.chunk.js.map": "/DuplicateTabCloserLandingPage/static/js/787.fec03637.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0176819d.css",
-    "static/js/main.8b338d17.js"
+    "static/css/main.d5def1d2.css",
+    "static/js/main.ebcdd6ea.js"
   ]
 }
