@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DuplicateTabCloserLandingPage/static/css/main.604476bd.css",
-    "main.js": "/DuplicateTabCloserLandingPage/static/js/main.3891ce4a.js",
+    "main.css": "/DuplicateTabCloserLandingPage/static/css/main.c214f4b1.css",
+    "main.js": "/DuplicateTabCloserLandingPage/static/js/main.c05ce11d.js",
     "static/js/787.fec03637.chunk.js": "/DuplicateTabCloserLandingPage/static/js/787.fec03637.chunk.js",
     "static/media/Windows_On.webp": "/DuplicateTabCloserLandingPage/static/media/Windows_On.b650e56b4ee598e246f0.webp",
     "static/media/Exclusions.webp": "/DuplicateTabCloserLandingPage/static/media/Exclusions.683798e9190864c6625e.webp",
@@ -11,12 +11,12 @@
     "static/media/MoveTabs.webp": "/DuplicateTabCloserLandingPage/static/media/MoveTabs.baad747a8241801ac30e.webp",
     "static/media/DTC_In_Action.webp": "/DuplicateTabCloserLandingPage/static/media/DTC_In_Action.62482852defd896981fd.webp",
     "index.html": "/DuplicateTabCloserLandingPage/index.html",
-    "main.604476bd.css.map": "/DuplicateTabCloserLandingPage/static/css/main.604476bd.css.map",
-    "main.3891ce4a.js.map": "/DuplicateTabCloserLandingPage/static/js/main.3891ce4a.js.map",
+    "main.c214f4b1.css.map": "/DuplicateTabCloserLandingPage/static/css/main.c214f4b1.css.map",
+    "main.c05ce11d.js.map": "/DuplicateTabCloserLandingPage/static/js/main.c05ce11d.js.map",
     "787.fec03637.chunk.js.map": "/DuplicateTabCloserLandingPage/static/js/787.fec03637.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.604476bd.css",
-    "static/js/main.3891ce4a.js"
+    "static/css/main.c214f4b1.css",
+    "static/js/main.c05ce11d.js"
   ]
 }
