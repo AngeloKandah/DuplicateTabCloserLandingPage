@@ -3,8 +3,8 @@ import tabOff from '../../images/TabGroups_Off.webp';
 
 function TabGroups() {
   return (
-    <div id='TabGroups' className='pb-4'>
-      <h1 className='text-3xl font-semibold pt-3'>TabGroups</h1>
+    <div id='Tab Groups' className='pb-4'>
+      <h1 className='text-3xl font-semibold pt-3'>Tab Groups</h1>
       <p className='py-3'>
         The detect duplicates between tabgroups will detect any duplicates
         whether in a tabgroup or not. It functions slightly different from

@@ -9,20 +9,19 @@ import {
   Logs,
 } from './components/pages';
 import { Header } from './components/header';
-import { Footer } from './components/footer';
 
 function App() {
   const routes = [
     { title: 'Home', page: Home },
-    { title: 'MoveTabs', page: MoveTabs },
+    { title: 'Move Tabs', page: MoveTabs },
     { title: 'Windows', page: Windows },
-    { title: 'TabGroups', page: TabGroups },
+    { title: 'Tab Groups', page: TabGroups },
     { title: 'Exclusions', page: Exclusions },
     { title: 'Logs', page: Logs },
   ];
   return (
     <div>
-      <Header title='DuplicateTabCloser' navbarRoutes={routes} />
+      <Header navbarRoutes={routes} />
       <div
         id='pageContainer'
         className='px-container'
@@ -34,7 +33,6 @@ function App() {
           return <Page key={uuidv4()} />;
         })}
       </div>
-      <Footer />
     </div>
   );
 }

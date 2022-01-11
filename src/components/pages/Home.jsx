@@ -3,17 +3,7 @@ import DTC from '../../images/DTC_In_Action.webp';
 function Home() {
   return (
     <div id='Home' className='pb-4'>
-      <h1 className='text-3xl font-semibold pt-3'>Home</h1>
-      <p className='py-3'>
-        The Duplicate Tab Closer does exactly what it says it does, closes
-        duplicate tabs! With the Duplicate Tab Closer it will prevent you from
-        having duplicate tabs from existing at the same time, and will close the
-        newest tab opened to prevent any input loss in an already opened tab.
-        The way the Duplicate Tab Closer works is simply by comparing urls to
-        see if they match, so it will not close any tabs from the same source if
-        they are not exactly the same. The Duplicate Tab Closer will also always
-        focus the tab that was detected as a duplicate.
-      </p>
+      <h1 className='text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-semibold text-center py-3 font-mono'>Duplicate Tab Closer</h1>
       <figure className='py-3'>
         <img
           className='mx-auto'
@@ -24,7 +14,16 @@ function Home() {
           The extension in action.
         </figcaption>
       </figure>
-
+      <p className='py-3'>
+        The Duplicate Tab Closer does exactly what it says it does, closes
+        duplicate tabs! With the Duplicate Tab Closer it will prevent you from
+        having duplicate tabs from existing at the same time, and will close the
+        newest tab opened to prevent any input loss in an already opened tab.
+        The way the Duplicate Tab Closer works is simply by comparing urls to
+        see if they match, so it will not close any tabs from the same source if
+        they are not exactly the same. The Duplicate Tab Closer will also always
+        focus the tab that was detected as a duplicate.
+      </p>
       <p className='py-3'>
         The main purpose of this extension is to make your tabs less cluttered,
         too many tabs makes it impractical to navigate and will inevitably lead
@@ -43,5 +42,9 @@ function Home() {
     </div>
   );
 }
+
+//Built on github
+//Desktop Icon left side, title of project front and center, keep menu items on left side
+//Mobile Icon center, dropdown left side, github right side
 
 export default Home;

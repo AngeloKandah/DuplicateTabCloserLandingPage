@@ -1,15 +1,28 @@
 import { Navbar } from '../navbar';
+import logo from '../../images/logo.png';
+import GithubCorner from 'react-github-corner';
 
-function Header({ title, navbarRoutes }) {
+function Header({ navbarRoutes }) {
   return (
     <header
       id='header'
-      className='bg-navGray flex justify-between lg:justify-start sticky z-100 top-0'
+      className='bg-navGray flex lg:justify-start sticky z-10 top-0'
     >
-      <h1 className='bg-navGray xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl text-white lg:p-6 p-5'>
-        {title}
-      </h1>
+      <img
+        src={logo}
+        alt='icon'
+        className='hidden lg:flex lg:w-12 lg:h-12 lg:m-2'
+      ></img>
       {navbarRoutes ? <Navbar routes={navbarRoutes} /> : ''}
+      <img
+        src={logo}
+        alt='icon'
+        className='lg:hidden w-12 h-12 m-2 flex mx-auto'
+      ></img>
+      <GithubCorner
+        href='https://github.com/AngeloKandah/DuplicateTabCloserLandingPage'
+        svgStyle={{height: 64, width: 64}}
+      />
     </header>
   );
 }

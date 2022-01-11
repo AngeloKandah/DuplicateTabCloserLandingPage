@@ -6,7 +6,7 @@ function Navbar({ routes }) {
     <div id='navbar-container' className='flex'>
       <ul
         id='desktop-navbar'
-        className='hidden lg:bg-navGray lg:flex lg:items-end'
+        className='hidden lg:bg-navGray lg:flex lg:items-center'
       >
         {routes.map(({ title }) => (
           <li key={uuidv4()}>
@@ -15,7 +15,7 @@ function Navbar({ routes }) {
         ))}
       </ul>
       <button
-        className='bg-navGray lg:hidden text-white w-28 hover:bg-navGray-hover'
+        className='bg-navGray absolute h-16 w-16 text-white w-28 hover:bg-navGray-hover lg:hidden'
         onClick={() =>
           document.getElementById('mobile-navbar').classList.toggle('hidden')
         }
@@ -24,7 +24,7 @@ function Navbar({ routes }) {
       </button>
       <ul
         id='mobile-navbar'
-        className='hidden bg-navGray absolute md:mt-19 sm:mt-18 mt-17 lg:hidden'
+        className='hidden bg-navGray absolute mt-16 lg:hidden'
       >
         {routes.map(({ title }) => (
           <li key={uuidv4()}>

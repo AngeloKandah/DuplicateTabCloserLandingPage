@@ -23,6 +23,7 @@ module.exports = {
       },
       padding: {
         container: '25vw',
+        navItem: '1.125rem',
       },
       zIndex: {
         100: 100,

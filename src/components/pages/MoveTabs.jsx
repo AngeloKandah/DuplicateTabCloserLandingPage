@@ -2,8 +2,8 @@ import moveTabs from '../../images/MoveTabs.webp';
 
 function MoveTabs() {
   return (
-    <div id='MoveTabs' className='pb-4'>
-      <h1 className='text-3xl font-semibold pt-3'>MoveTabs</h1>
+    <div id='Move Tabs' className='pb-4'>
+      <h1 className='text-3xl font-semibold pt-3'>Move Tabs</h1>
       <p className='py-3'>
         The MoveTabs option is simple, it will move the tab to position in front
         of the tab you attempted opening a new tab from. It will close the newly

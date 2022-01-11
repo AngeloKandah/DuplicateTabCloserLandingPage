@@ -1,7 +1,7 @@
 function NavbarItem({ title }) {
   return (
     <a
-      className='block text-white text-center p-3 xl:text-lg md:text-base w-28 lg:w-24 xl:w-28 hover:bg-navGray-hover'
+      className='block text-white text-center px-3 py-5 xl:py-navItem xl:text-lg md:text-base w-28 h-fit lg:w-auto hover:bg-navGray-hover'
       href={`#${title}`}
     >
       {title}
