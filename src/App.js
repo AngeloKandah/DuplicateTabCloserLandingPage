@@ -24,7 +24,7 @@ function App() {
       <Header navbarRoutes={routes} />
       <div
         id='contentContainer'
-        className='px-container'
+        className='px-mobileContainer sm:px-container'
         onClick={() =>
           document.getElementById('mobile-navbar').classList.add('hidden')
         }

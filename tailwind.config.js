@@ -17,10 +17,12 @@ module.exports = {
         },
       },
       margin: {
-        title: '-25vw',
+        title: '-20vw',
+        mobileTitle: '-15vw',
       },
       padding: {
         container: '25vw',
+        mobileContainer: '20vw',
         navItem: '1.125rem',
       },
       zIndex: {

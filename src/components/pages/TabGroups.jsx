@@ -1,5 +1,4 @@
 import tabOn from '../../images/TabGroups_On.webp';
-import tabOff from '../../images/TabGroups_Off.webp';
 
 function TabGroups() {
   return (
@@ -21,16 +20,6 @@ function TabGroups() {
         />
         <figcaption className='text-center text-sm'>
           'Detect TabGroups' when enabled.
-        </figcaption>
-      </figure>
-      <figure className='py-3'>
-        <img
-          className='mx-auto'
-          src={tabOff}
-          alt='Portraying Detect Duplicates Between TabGroups is Off'
-        />
-        <figcaption className='text-center text-sm'>
-          'Detect TabGroups' when disabled.
         </figcaption>
       </figure>
     </div>

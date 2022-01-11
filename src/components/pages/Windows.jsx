@@ -1,5 +1,4 @@
 import winOn from '../../images/Windows_On.webp';
-import winOff from '../../images/Windows_Off.webp'
 
 function Windows() {
   return (
@@ -20,16 +19,6 @@ function Windows() {
         />
         <figcaption className='text-center text-sm'>
           'Detect Windows' when enabled.
-        </figcaption>
-      </figure>
-      <figure className='py-3'>
-        <img
-          className='mx-auto'
-          src={winOff}
-          alt='Portraying when Detect Duplicates Between Windows is Off'
-        />
-        <figcaption className='text-center text-sm'>
-          'Detect Windows' when disabled.
         </figcaption>
       </figure>
     </div>

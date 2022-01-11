@@ -5,7 +5,7 @@ function Home() {
     <div id='Home' className='pb-4'>
       <h1
         id='title'
-        className='text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-semibold text-center py-5 mx-title font-mono'
+        className='text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-semibold text-center py-5 mx-mobileTitle sm:mx-title font-mono'
       >
         Duplicate Tab Closer
       </h1>
