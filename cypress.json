@@ -1,0 +1,9 @@
+{
+    "viewportHeight": 800,
+    "viewportWidth": 1000,
+    "component": {
+        "supportFile": "cypress/support/component.js",
+        "testFiles": "**/*.test.{js,ts,jsx,tsx}",
+        "componentFolder": "src"
+    }
+}
