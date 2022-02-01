@@ -15,6 +15,7 @@ function Navbar({ routes }) {
         ))}
       </ul>
       <button
+        id='mobile-navbar-button'
         className='bg-navGray absolute h-16 w-16 text-white w-28 hover:bg-navGray-hover lg:hidden'
         onClick={() =>
           document.getElementById('mobile-navbar').classList.toggle('hidden')
