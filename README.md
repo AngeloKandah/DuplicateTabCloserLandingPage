@@ -1,5 +1,7 @@
 # The DuplicateTabCloser Landing Page
 
+Visit the page [here!](https://angelokandah.github.io/DuplicateTabCloserLandingPage/)
+
 This is a landing page for a chrome extension called the [DuplicateTabCloser](https://github.com/AngeloKandah/DuplicateTabCloser) and shows off the capabilities of the extension. Completely developed using [Create React App](https://github.com/facebook/create-react-app) and utilizing the framework [Tailwind](https://tailwindcss.com/docs/installation) and focuses on keeping mobile first in mind by using built in media queries to best fit the screen size.
 
 ### License
